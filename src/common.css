@@ -1,0 +1,14 @@
+/*样式1*/
+@media(max-width:340px){
+  html{font-size: 18px;}
+}
+
+
+/*样式2*/
+/* @media(min-width:340px) and (max-width:410px){} */
+html{font-size: 20px;}
+
+/*样式3*/
+@media(min-width:410px) {
+  html{font-size: 22px;}
+}
