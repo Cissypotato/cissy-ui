@@ -1,0 +1,37 @@
+.cc-header{
+    display: flex;
+    width: 100%;
+    max-width: 640px;
+    box-sizing: border-box;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: #f8f8f8;
+}
+.cc-header>.left{
+    flex-basis: 3rem;
+    flex-shrink: 0;
+    text-align: center;
+    border: 1px solid red;
+}
+.cc-header>.title{
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.cc-header>.right{
+    flex-basis: 3rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/*
+这里面没有使用“left: 0;”来把标题栏放在窗口最左面，这是因为如果不给它限定水平方向位置，
+那么它起始的位置就时它脱离文档流之前的位置，也就是现在 body 的起始位置。
+这样在超宽屏幕下也能保证标题栏也在 body 的左上角，而不是屏幕的左上角。
+*/
